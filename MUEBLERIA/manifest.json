@@ -1,0 +1,26 @@
+{ 
+	"short_name":"MyPWA",
+	"name":"My page PWA",
+	"icons": [
+		{
+			"src":"img/icon.png",
+			"size":"144x144",
+			"type":"image/png"
+		},
+		{
+		"src":"img/icon2.png",
+			"size":"144x144",
+			"type":"image/png"
+			}
+		],
+
+	"star_url":"/js/sw.js",
+	"display":"standalone",
+	"orientation":"portrait",
+	"background_color":"#a1d9fc",
+	"theme_color":"#a1d9fc",
+	"categories":["technology","web","pwa","education"],
+	"description":"Primera aplicacion progresiva realizada CQJ"
+
+
+}

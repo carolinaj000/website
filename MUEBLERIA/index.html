@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BAZAR VINTAGE | Blog</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/estilo2.css">
+    <link rel="manifest" href="manifest.json">
+	<link rel="icon" type="image/x-icon" href="/img/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header" id="inicio">
+	<div class="container logo-nav-container">
+	<nav class="menu-navegacion">
+		<ul>
+		<li><a href="catalogo.html">Venta Internacional</a></li>
+		<li><a href="#servicio">Servicio</a></li>
+		<li><a href="#portafolio">Portafolio</a></li>
+		<li><a href="#expertos">Expertos</a></li>
+		<li><a href="#contacto">Contacto</a></li>
+		</ul>
+	</nav>
+	</div>
+	<div class="contenedor head">
+		<h1 class="titulo">BAZAR VINTAGE</h1>
+		<p class="copy">Accesorios en tu decoracion para que des tu toque en tu espacio.</p>
+	</div>
+</header>
+<main>
+	<section class="contenedor" id="servicio">
+		<h2 class="subtitulo">CONOCE NUESTRO BLOG</h2>
+		<div class="contenedor-servicio">
+			<img src="img/ilustracion1.png" alt="">
+			<div class="checklist-servicio">
+				<div class="service">
+					<h3 class="n-service"><span class="number">1</span>Online.</h3>
+					<p>Así de fácil es comprar tus muebles online de manera rápida y cómoda desde tu hogar. </p>
+				</div>
+				<div class="service">
+					<h3 class="n-service"><span class="number">2</span>Con nosotros encontraras.</h3>
+					<p> Gran variedad y estilos en salas, sillones, sofás, recámaras, sofás cama, mesas, sillas, muebles de TV, accesorios y muchos muebles más para tu hogar.</p>
+				</div>
+				<div class="service">
+					<h3 class="n-service"><span class="number">3</span>Como TU lo quieres.</h3>
+					<p> Solo elige el modelo, estilo, material y color.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="gallery" id="portafolio">
+		<div class="contenedor">
+			<h2 class="subtitulo">COLECCIONES</h2>
+			<div class="contenedor-galeria">
+				<img src="img/mueble1.jpg" alt="" class="img-galeria">
+				<img src="img/mueble2.jpg" alt="" class="img-galeria">
+				<img src="img/mueble3.jpg" alt="" class="img-galeria">
+				<img src="img/mueble4.jpg" alt="" class="img-galeria">
+				<img src="img/mueble6.jpg" alt="" class="img-galeria">
+				<img src="img/mueble5.jpg" alt="" class="img-galeria">
+			</div>
+		</div>
+	</section>
+	<section class="imagen-light">
+		<img src="img/icon2.png" alt="" class="close">
+		<img src="img/ilustracion4.png" alt="" class="agregar-imagen">
+	</section> 
+	<section class="contenedor" id="expertos">
+		<h2 class="subtitulo">TODO DISEÑADO PARA TI
+</h2>
+		<section class="experts">
+			<div class="cont-expert">
+			<img src="img/ilustracion3.png" alt="">
+			<h3 class="n-expert">Tenemos el proceso de compra mas sencillo que puedas imaginar, sin costos extras ni sorpresas.</h3>
+			</div>
+			<div class="cont-expert">
+			<img src="img/ilustracion4.png" alt="">
+			<h3 class="n-expert">Tenemos un amplio catalogo de productos de la mejor calidad, pensados para darle el mejor estilo a tu espacio.</h3>
+			</div>
+			<div class="cont-expert">
+			<img src="img/ilustracion5.png" alt="">
+			<h3 class="n-expert">Te mandamos todo hasta tu casa para que no tengas que salir de ella.</h3>
+			</div>
+		</section>
+	</section>
+</main>
+ 
+	<footer>
+        <div class="contenedor-footer" id="contacto">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>8421162366</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicacion</h4>
+                <p>Av. Industria Metalúrgica # 2001
+
+         Parque Industrial Ramos Arizpe Coah.</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>bazar_vintage@gmail.com</p>
+            </div>
+            
+        </div>
+        <h2 class="titulo-final">&copy; Univesidad Tecnologica de Coahuila | Carolina Quiñones</h2>
+    </footer>
+		<script type="text/javascript">
+
+		function valida(){
+	
+		 	let nombre =document.getElementById('name').value;
+		 	let correo =document.getElementById('email').value;
+		 	let password =document.getElementById('password').value;
+		 	if (password.length < 8) {
+		 		alert('La contraseña debe de tener al menos 8 caracteres');
+		 	}else{
+		 		alert("Haz sido registrado exitosamente" +nombre );
+		 	}
+		}
+	</script>
+	<script type="text/javascript">
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function(){
+				navigator.serviceWorker.register('/js/sw.js?' + Math.random() + '')
+			});
+		}
+	</script>
+
+</body>
+</html>
